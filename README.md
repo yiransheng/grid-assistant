@@ -1,6 +1,8 @@
 grid-assistant.js
 -----------------
 
+## [Demo](http://yiransheng.github.io/grid-assistant/)
+
 Use: `gridAssistant(DOMElement, [ncol, gutter])`
 
 `ncol`: number of columns, `gutter`: number, pixle value of gutter width. 
