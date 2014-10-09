@@ -38,15 +38,23 @@
 <pre><code>Example: 
 var ga = require('grid-assistant.js');
 var element = document.getElementById('container');
-ga(element, 16, 30); // 16 columns, 30px gutter
+ga(element, 12, 30); // 12 columns, 30px gutter
 </code></pre>
       </section>
+      <section>
+      <div id="container" style="height: 40vh; width: 100%;"></div>
+      </secion>
       <footer>
         <p>This project is maintained by <a href="https://github.com/yiransheng">yiransheng</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/grid-assistant.js"></script>
+    <script>
+      var el = document.getElementById('container');
+      gridAssistant(el, 12, 30);
+    </script>
     
   </body>
 </html>
