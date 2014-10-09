@@ -12,7 +12,7 @@ var element = document.getElementById('container');
 ga(element, 16, 30); // 16 columns, 30px gutter
 ```
 
-![Results of above code]()
+![Results of above code](http://yiransheng.github.io/grid-assistant/ga.png)
 
 
 
