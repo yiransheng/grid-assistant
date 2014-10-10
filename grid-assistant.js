@@ -78,7 +78,7 @@
     window.addEventListener('resize', throttle(function() {
       el._gridMetaData = null;
       overlayGrid(el, ncol, gutter);
-    }, 800));    
+    }, 15000));    
   };
 
   // funcs
