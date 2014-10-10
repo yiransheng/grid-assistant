@@ -75,10 +75,10 @@
     var img = c.toDataURL();
     el.style.background = 'url(' + img + ') 0 0 no-repeat';
     document.body.removeChild(c);
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', throttle(function() {
       el._gridMetaData = null;
       overlayGrid(el, ncol, gutter);
-    });    
+    }, 800));    
   };
 
   // funcs
@@ -136,6 +136,28 @@
         ctx.fillText(i, x1-w/2, Math.min(H/3, 60));
       }
     }
+  }
+  function throttle(fn, threshhold, scope) {
+    threshhold || (threshhold = 250);
+    var last,
+        deferTimer;
+    return function () {
+      var context = scope || this;
+
+      var now = +new Date,
+          args = arguments;
+      if (last && now < last + threshhold) {
+        // hold on to it
+        clearTimeout(deferTimer);
+        deferTimer = setTimeout(function () {
+          last = now;
+          fn.apply(context, args);
+        }, threshhold);
+      } else {
+        last = now;
+        fn.apply(context, args);
+      }
+    };
   }
 
 });
