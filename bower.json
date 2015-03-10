@@ -1,0 +1,27 @@
+{
+  "name": "grid-assistant",
+  "version": "0.0.1",
+  "homepage": "http://yiransheng.github.io/grid-assistant/",
+  "authors": [
+    "Yiran Sheng <shengyiran@gmail.com>"
+  ],
+  "description": "Small Utility to draw bootstrap style grids directly into DOM, can be used directly in browser console.",
+  "main": "grid-assistant.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "grid",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

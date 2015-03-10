@@ -1,0 +1,23 @@
+{
+  "name": "grid-assistant",
+  "version": "0.0.1",
+  "description": "\"Small Utility to draw bootstrap style grids directly into DOM, can be used directly in browser console.\"",
+  "main": "grid-assistant.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yiransheng/grid-assistant.git"
+  },
+  "keywords": [
+    "grid",
+    "bootstrap"
+  ],
+  "author": "shengyiran@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yiransheng/grid-assistant/issues"
+  },
+  "homepage": "https://github.com/yiransheng/grid-assistant"
+}
