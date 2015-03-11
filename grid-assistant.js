@@ -73,7 +73,7 @@
     var c = createCanvas(bb.width, bb.height);
     drawVerticalGrid(c, ncol, gutter);
     var img = c.toDataURL();
-    el.style.background = 'url(' + img + ') 0 0 no-repeat';
+    el.style.background = 'url(' + img + ') 0 0 repeat-y';
     document.body.removeChild(c);
     window.addEventListener('resize', throttle(function() {
       el._gridMetaData = null;
